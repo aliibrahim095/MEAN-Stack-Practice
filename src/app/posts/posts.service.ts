@@ -8,9 +8,9 @@ export class PostServices {
 
   private updatedPosts = new Subject<Post[]>();
 
-  getPosts() {
-    return [...this.posts];
-  }
+  // getPosts() {
+  //   return [...this.posts];
+  // }
 
   getPostUpdateListener(){
     return this.updatedPosts.asObservable();
